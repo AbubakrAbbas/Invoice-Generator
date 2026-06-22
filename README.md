@@ -4,7 +4,7 @@ A clean, simple invoice generator built with vanilla HTML, CSS, and JavaScript. 
 
 ## 🔗 Live Demo
 
-[View Live Site](https://AbubakrAbbas.github.io/Invoice-Generator)
+[View Live Site](https://invoice-generator-lilac-xi.vercel.app/)
 
 ---
 
