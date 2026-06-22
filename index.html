@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Invoice Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="invoice-container">
+      <h2>INVOICE GENERATOR</h2>
+      <div class="invoice-header">
+        <div>
+          <label>From:</label>
+          <textarea
+            id="from-details"
+            placeholder="Your Company, Address"
+          ></textarea>
+        </div>
+        <div>
+          <label>Bill To:</label>
+          <textarea
+            id="to-details"
+            placeholder="Client Company, Address"
+          ></textarea>
+        </div>
+      </div>
+      <table id="invoice-table">
+        <thead>
+          <tr>
+            <th>Item Description</th>
+            <th class="col-qty">Quantity</th>
+            <th class="col-rate">Rate ($)</th>
+            <th class="col-amount">Amount</th>
+            <th class="col-action"></th>
+          </tr>
+        </thead>
+        <tbody id="item-rows"></tbody>
+      </table>
+      <button class="add-item-btn">+ Add Line Item</button>
+      <button id="clear-btn" class="no-print">Clear Invoice</button>
+      <div class="invoice-total">
+        <h3>Total: $<span id="grand-total">0.00</span></h3>
+      </div>
+      <button id="print-btn">Preview Bill</button>
+    </div>
+
+    <!-- Custom Bill Preview Modal -->
+    <div id="bill-modal" class="modal-overlay hidden">
+      <div class="modal-box">
+        <div id="bill-content"></div>
+        <button id="close-modal-btn">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
