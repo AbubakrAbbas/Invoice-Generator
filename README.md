@@ -30,7 +30,6 @@ A clean, simple invoice generator built with vanilla HTML, CSS, and JavaScript. 
 ---
 
 ## 📁 Project Structure
-
 invoice-generator/
 ├── index.html # Markup and structure
 ├── style.css # All styling
