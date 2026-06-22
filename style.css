@@ -284,3 +284,81 @@ button:active {
     width: 100%;
   }
 }
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  .invoice-container {
+    padding: 16px;
+  }
+
+  .invoice-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .invoice-header div {
+    width: 100%;
+  }
+
+  /* Make table scroll horizontally instead of breaking */
+  #invoice-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Shrink column widths on mobile */
+  .col-qty {
+    width: 70px;
+  }
+  .col-rate {
+    width: 80px;
+  }
+  .col-amount {
+    width: 90px;
+  }
+  .col-action {
+    width: 36px;
+  }
+
+  /* Shrink inputs inside table */
+  #invoice-table input {
+    padding: 4px;
+    font-size: 13px;
+  }
+
+  .add-item-btn,
+  #clear-btn {
+    width: 100%;
+    margin: 6px 0;
+  }
+
+  #print-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .modal-box {
+    padding: 16px;
+  }
+
+  .bill-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .bill-header div {
+    max-width: 100%;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions button {
+    width: 100%;
+  }
+}
