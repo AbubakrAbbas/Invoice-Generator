@@ -251,3 +251,36 @@ button:active {
 .modal-box {
   box-sizing: border-box;
 }
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+  }
+
+  .invoice-container {
+    padding: 20px;
+  }
+
+  .invoice-header {
+    flex-direction: column;
+  }
+
+  .invoice-header div {
+    width: 100%;
+  }
+
+  .bill-header {
+    flex-direction: column;
+  }
+
+  .modal-box {
+    padding: 20px;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions button {
+    width: 100%;
+  }
+}
